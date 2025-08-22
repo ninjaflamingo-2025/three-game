@@ -1,4 +1,4 @@
-const ASSET_STORE = {
+export const ASSET_STORE = {
   models: {},
   textures: {},
   sprites: {},
