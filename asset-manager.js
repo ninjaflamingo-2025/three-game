@@ -64,6 +64,8 @@ class AssetManager extends EventTarget {
       texture_loader: new THREE.TextureLoader(),
       fbx_loader: new FBXLoader()
     }
+
+    console.log('asset manager loaded')
   }
   
   add(asset){
