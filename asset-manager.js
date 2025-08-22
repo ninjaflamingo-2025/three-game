@@ -129,6 +129,6 @@ class AssetManager extends EventTarget {
     this.addEventListener(event, listener);
   }
 }
-const asset_manager = new AssetManager(ASSET_STORE)
-export asset_manager
+export const asset_manager = new AssetManager(ASSET_STORE);
+
 
