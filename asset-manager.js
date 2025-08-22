@@ -1,4 +1,4 @@
-const ASSET_STORE = {
+export const ASSET_STORE = {
   models: {},
   textures: {},
   sprites: {},
@@ -17,7 +17,7 @@ const ASSET_STORE = {
   }
 }
 
-class Asset {
+export class Asset {
   constructor(name, path, data, loader){
     this.name = name
     this.path = path // path: asset_store path, will need to have some regex or a function that trims for nested stuff
@@ -26,7 +26,7 @@ class Asset {
   }
 }
 
-class AssetManager extends EventTarget {
+export class AssetManager extends EventTarget {
   constructor(asset_store){
     super()
     this.asset_store = asset_store
