@@ -1,4 +1,4 @@
-class FSM {
+export class FSM {
   constructor(states) {
     this.states = {}; 
     this.currentState = null; 
@@ -23,7 +23,7 @@ class FSM {
     this.currentState.enter();
   }
 }
-class Animation {
+export class Animation {
   constructor({ name, mesh }) {
     this.name = name;
     this.mesh = mesh;
