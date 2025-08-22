@@ -1,4 +1,4 @@
-export const ASSET_STORE = {
+const ASSET_STORE = {
   models: {},
   textures: {},
   sprites: {},
@@ -26,7 +26,7 @@ export class Asset {
   }
 }
 
-export class AssetManager extends EventTarget {
+class AssetManager extends EventTarget {
   constructor(asset_store){
     super()
     this.asset_store = asset_store
@@ -129,4 +129,6 @@ export class AssetManager extends EventTarget {
     this.addEventListener(event, listener);
   }
 }
+
+export const asset_manager = new AssetManager(ASSET_STORE)
 
